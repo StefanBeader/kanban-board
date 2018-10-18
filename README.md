@@ -18,7 +18,7 @@ You will need Composer too.
 
 Once you setup environment clone project from GitHub https://github.com/StefanBeader/kanban-board.git
 
-## 3. Run get Laravel files
+## 3. Get Laravel files
 
 After you get files go in project root folder and run composer install cmd
 If that cmd don't create .env file make copy of .env.example from root folder and name it .env
