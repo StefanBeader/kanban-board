@@ -1,0 +1,112 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  background-color: #f8fafc;
+}
+
+[draggable] {
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+}
+
+.App {
+  display: grid;
+  grid-template-columns: repeat(3, 250px);
+  grid-column-gap: 30px;
+  padding: 50px 100px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Nunito", sans-serif;
+}
+
+.panel {
+  min-height: 500px;
+  border-radius: 3px;
+  display: inline-block;
+  text-align: center;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.panel h2 {
+  margin: 0 0 30px 0;
+  padding: 10px 15px;
+}
+
+.panel ul {
+  list-style: none;
+  margin: 0;
+  padding: 0 15px;
+}
+
+.panel.hovered {
+  background-color: lightyellow;
+}
+
+.panel.success {
+  background-color: lightgreen;
+}
+
+.panel.error {
+  background-color: lightcoral;
+}
+
+#backlog {
+  border: 1px solid #ebcdcc;
+}
+
+#backlog h2 {
+  color: #a94442;
+  background-color: #ebcdcc;
+}
+
+#inProgress {
+  border: 1px solid #aad0e2;
+}
+
+#inProgress h2 {
+  color: #31708f;
+  background-color: #aad0e2;
+}
+
+#done {
+  border: 1px solid #aad4ab;
+}
+
+#done h2 {
+  color: #3c763d;
+  background-color: #aad4ab;
+}
+
+.task {
+  background-color: #31708f;
+  display: block;
+  color: white;
+  margin-bottom: 10px;
+  border: 1px solid #31708f;
+  border-radius: 3px;
+  padding: 10px 15px;
+}
+
+.limiter {
+  margin: 50px auto;
+  grid-column: 2/3;
+  -ms-flex-item-align: center;
+      align-self: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.limiter label {
+  display: block;
+  margin-bottom: 20px;
+  font-size: 1.2em;
+}
+
