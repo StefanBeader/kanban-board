@@ -26,7 +26,7 @@ Then run key:generate cmd, that will create application key.
 
 ## 4. Create DB and DB User
 You will need new DB and User for this project.
-After you create it enter parametars in .env file
+After you create it enter parameters in .env file
 Next run migrations with php artisan migrate cmd
 You will get new Tables and Data in them.
 
